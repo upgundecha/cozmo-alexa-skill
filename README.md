@@ -38,8 +38,8 @@ RaiseHand raise your hands
 RaiseHand raise hands
 RaiseHand to raise hands
 
-DropHands drop hands
-DropHands to drop hands
+DropHand drop hands
+DropHand to drop hands
 ```
 
 ## Lambda Configuration
@@ -49,3 +49,9 @@ DropHands to drop hands
 3. Upload the code archive
 4. Add COZMO_HOST environment variable with Host/IP running Cozmo
 5. Execution Role > Create new role from template(s) > role_name > Simple Microservices permissions
+
+
+## Cozmo Program
+
+You can find Cozmo script for this integration (here)[https://github.com/upgundecha/cozmo-python-sdk/blob/master/examples/if_this_then_that/alexa.py]
+

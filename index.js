@@ -4,7 +4,7 @@ exports.handler = (event, context, callback) => {
   try {
     switch (event.request.type) {
       case "LaunchRequest":
-        buildResponse("Welcome to Unmesh's Cozmo")
+        context.succeed(buildResponse("Welcome to Unmesh's Cozmo"))
         break;
       case "IntentRequest":
         switch(event.request.intent.name){
@@ -18,13 +18,13 @@ exports.handler = (event, context, callback) => {
               context.succeed(buildResponse(`Cozmo is moving back`))
             })
             break;
-          case "RaiseHands":
-            raiseHands(function(){
+          case "RaiseHand":
+            raiseHand(function(){
               context.succeed(buildResponse(`Cozmo is raising hands`))
             })
             break;
-          case "DropHands":
-            dropHands(function(){
+          case "DropHand":
+            dropHand(function(){
               context.succeed(buildResponse(`Cozmo is dropping hands`))
             })
             break;
@@ -42,48 +42,48 @@ exports.handler = (event, context, callback) => {
 
 moveForward= (callback) =>{
   var options = {
-    url: `${process.env.COZMO_HOST}/moveForward/`,
+    url: `${process.env.COZMO_HOST}/moveForward`,
     headers: {
       'User-Agent': 'cozmo-alexa-skill'
     }
   };
-  request(options, function(error, response, body){
-    callback(data.followers)
+  request.post(options, function(error, response, body){
+    callback()
   })
 }
 
 moveBackward= (callback) =>{
   var options = {
-    url: `${process.env.COZMO_HOST}/moveBackward/`,
+    url: `${process.env.COZMO_HOST}/moveBackward`,
     headers: {
       'User-Agent': 'cozmo-alexa-skill'
     }
   };
-  request(options, function(error, response, body){
+  request.post(options, function(error, response, body){
     callback()
   })
 }
 
 raiseHand = (callback) =>{
   var options = {
-    url: `${process.env.COZMO_HOST}/raiseHand/`,
+    url: `${process.env.COZMO_HOST}/raiseHand`,
     headers: {
       'User-Agent': 'cozmo-alexa-skill'
     }
   };
-  request(options, function(error, response, body){
+  request.post(options, function(error, response, body){
     callback()
   })
 }
 
 dropHand = (callback) =>{
   var options = {
-    url: `${process.env.COZMO_HOST}/dropHand/`,
+    url: `${process.env.COZMO_HOST}/dropHand`,
     headers: {
       'User-Agent': 'cozmo-alexa-skill'
     }
   };
-  request(options, function(error, response, body){
+  request.post(options, function(error, response, body){
     callback()
   })
 }
