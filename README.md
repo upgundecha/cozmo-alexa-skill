@@ -47,4 +47,5 @@ DropHands to drop hands
 1. Name - CozmoAlexaSkill
 2. Trigger - Alexa Skill Kit
 3. Upload the code archive
-4. Execution Role > Create new role from template(s) > role_name > Simple Microservices permissions
+4. Add COZMO_HOST environment variable with Host/IP running Cozmo
+5. Execution Role > Create new role from template(s) > role_name > Simple Microservices permissions
