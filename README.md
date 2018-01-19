@@ -53,5 +53,5 @@ DropHand to drop hands
 
 ## Cozmo Program
 
-You can find Cozmo script for this integration (here)[https://github.com/upgundecha/cozmo-python-sdk/blob/master/examples/if_this_then_that/alexa.py]
+You can find Cozmo script for this integration [here](https://github.com/upgundecha/cozmo-python-sdk/blob/master/examples/if_this_then_that/alexa.py)
 
