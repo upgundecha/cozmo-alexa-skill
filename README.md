@@ -55,6 +55,7 @@ DropHand to drop hands
 
 You can find Cozmo script for this integration [here](https://github.com/upgundecha/cozmo-python-sdk/blob/master/examples/if_this_then_that/alexa.py)
 
+See Video
 
 [![Alexa controlling Cozmo](http://img.youtube.com/vi/qEqHtSpFRGc/0.jpg)](http://www.youtube.com/watch?v=qEqHtSpFRGc "Alexa controlling Cozmo")
 
