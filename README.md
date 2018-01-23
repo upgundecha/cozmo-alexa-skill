@@ -55,3 +55,8 @@ DropHand to drop hands
 
 You can find Cozmo script for this integration [here](https://github.com/upgundecha/cozmo-python-sdk/blob/master/examples/if_this_then_that/alexa.py)
 
+
+[![Alexa controlling Cozmo](http://img.youtube.com/vi/qEqHtSpFRGc/0.jpg)](http://www.youtube.com/watch?v=qEqHtSpFRGc "Alexa controlling Cozmo")
+
+This skill is not complete and depends on configuring Cozmo host via AWS console. Need to find a better way to set the host via Alexa App or some other mechanisms.
+
